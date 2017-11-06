@@ -1,2 +1,0 @@
-webpackJsonp([6],{"0qit":function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var l=t("Fgn6"),u=t("VU/8"),a=u(l.a,null,null,null,null);n.default=a.exports},Fgn6:function(e,n,t){"use strict";var l=t("8knX");n.a=Object(l.a)("new")}});
-//# sourceMappingURL=_page.a1b4303375a4e11c02f2.js.map

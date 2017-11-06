@@ -1,2 +1,0 @@
-webpackJsonp([8],{wx2b:function(e,l,n){"use strict";var t=n("8knX");l.a=Object(t.a)("ask")},zXNk:function(e,l,n){"use strict";Object.defineProperty(l,"__esModule",{value:!0});var t=n("wx2b"),u=n("VU/8"),a=u(t.a,null,null,null,null);l.default=a.exports}});
-//# sourceMappingURL=_page.d9a4794a3b66ef81676f.js.map
