@@ -1,2 +1,0 @@
-webpackJsonp([13],{sdSN:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r=n("Xxa5"),a=n.n(r),s=n("exGp"),u=n.n(s),c=this,d=n.e(9).then(n.bind(null,"UlOv"));t.default=u()(a.a.mark(function e(){return a.a.wrap(function(e){for(;;)switch(e.prev=e.next){case 0:return e.next=2,d;case 2:return d=e.sent,e.abrupt("return",d.Bar.extend({props:["data"],mounted:function(){this.renderChart(this.data)}}));case 4:case"end":return e.stop()}},e,c)}))}});
-//# sourceMappingURL=chart.22caa1320be147563d44.js.map
