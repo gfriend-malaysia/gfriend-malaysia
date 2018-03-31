@@ -1,4 +1,4 @@
-importScripts('/_nuxt/workbox.3de3418b.js')
+importScripts('/_nuxt/workbox.3de3418b.js', 'custom-sw.js')
 
 const workboxSW = new self.WorkboxSW({
   "cacheId": "gfriend-pwa",
@@ -8,28 +8,36 @@ const workboxSW = new self.WorkboxSW({
 
 workboxSW.precache([
   {
-    "url": "/_nuxt/app.432e8471d2dc00d49ed0.js",
-    "revision": "ae7a7fb830caa4a5b59415e7b41f4753"
+    "url": "/_nuxt/app.b25d64f8433abe1194c940d66c661b98.css",
+    "revision": "b25d64f8433abe1194c940d66c661b98"
   },
   {
-    "url": "/_nuxt/layouts_default.e44a1688b38f0f8002b7.js",
-    "revision": "502393457dd6a13db4b01f83e6a73af1"
+    "url": "/_nuxt/app.f0982bc339d748ac5172.js",
+    "revision": "a48fccd036208813b53c987105d942cb"
   },
   {
-    "url": "/_nuxt/manifest.27f7282922921992285c.js",
-    "revision": "09459efb6a2e370a58ee48605a07afb4"
+    "url": "/_nuxt/layouts_default.9c6cec786eee0b94f252.js",
+    "revision": "2f8629f01eb9979f97020ea8c4b7efd0"
+  },
+  {
+    "url": "/_nuxt/manifest.4a7f1e92cc658ad25145.js",
+    "revision": "7e412cd9cd837bb73ddac5f1a131a7b7"
   },
   {
     "url": "/_nuxt/ons.40ac840e.js",
     "revision": "bdfc64563fadaafd6b988984058fefd9"
   },
   {
-    "url": "/_nuxt/pages_index.979375be378670922e49.js",
-    "revision": "15504fefec7191724be426c4d446b8d2"
+    "url": "/_nuxt/pages_index.b28997835a242ff066dd.js",
+    "revision": "ed2804b3e75fb32d15ea8093022e5098"
   },
   {
-    "url": "/_nuxt/vendor.f94cc6b853312cac5e05.js",
-    "revision": "a22d688a9f05125ae850e9f5005c77e2"
+    "url": "/_nuxt/pages_test.f44fbf68553726780c3c.js",
+    "revision": "9c0307dd23d071f14bd1afa331492a88"
+  },
+  {
+    "url": "/_nuxt/vendor.36cf00d878800eaa2041.js",
+    "revision": "cb13284dba79ad8db810ab8fd798c150"
   }
 ])
 
