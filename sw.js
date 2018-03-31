@@ -48,7 +48,7 @@ const matchCb = ({url, event}) => {
   return new RegExp('/_nuxt/.*')
 };
 
-workboxSW.router.registerRoute(new RegExp('https://jsonplaceholder.typicode.com/.*'), workboxSW.strategies.cacheFirst({}), 'GET')
+workboxSW.router.registerRoute(new RegExp('https://jsonplaceholder.typicode.com.*'), workboxSW.strategies.cacheFirst({}), 'GET')
 
 workboxSW.router.registerRoute(new RegExp('/.*'), workboxSW.strategies.networkFirst({}), 'GET')
 
