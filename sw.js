@@ -45,10 +45,10 @@ workboxSW.precache([
 const matchCb = ({url, event}) => {
   console.error('url',url)
   console.error('event',event)
-  return new RegExp('/_nuxt/.*')
+  // return new RegExp('/_nuxt/.*')
 };
 
-workboxSW.router.registerRoute(new RegExp('/_nuxt/.*','https://jsonplaceholder.typicode.com.*'), workboxSW.strategies.cacheFirst({}), 'GET')
+workboxSW.router.registerRoute(matchCb, workboxSW.strategies.cacheFirst({}), 'GET')
 
 workboxSW.router.registerRoute(new RegExp('/.*'), workboxSW.strategies.networkFirst({}), 'GET')
 
