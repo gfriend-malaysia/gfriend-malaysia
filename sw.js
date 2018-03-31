@@ -47,7 +47,8 @@ const matchCb = ({url, event}) => {
   return true
 };
 
-workboxSW.router.registerRoute(matchCb, workboxSW.strategies.cacheFirst({}), 'GET')
+// workboxSW.router.registerRoute(matchCb, workboxSW.strategies.cacheFirst({}), 'GET')
 
-workboxSW.router.registerRoute(matchCb, workboxSW.strategies.networkFirst({}), 'GET')
+// workboxSW.router.registerRoute(matchCb, workboxSW.strategies.networkFirst({}), 'GET')
+workboxSW.router.registerRoute(matchCb, workbox.strategies.staleWhileRevalidate(), 'GET')
 
