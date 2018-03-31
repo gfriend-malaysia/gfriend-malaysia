@@ -1,17 +1,24 @@
-	console.error('self', self)
+self.onfetch = function(event) {
+  console.log('Handling fetch event for', event.request.url);
 
-self.addEventListener('fetch', function(event) {
-	console.error('event', event)
-	event.respondWith(
-		caches.match(event.request)
-		.then(function(response) {
-			// Cache hit - return response
-			if (response) {
-				console.error('response', response)
+  event.respondWith(
+    caches.match(event.request).then(function(response) {
+      if (response) {
+        console.log('Found response in cache:', response);
 
-				return response;
-			}
-			return fetch(event.request);
-		})
-	);
-});
+        return response;
+      }
+      console.log('No response found in cache. About to fetch from network...');
+
+      return fetch(event.request).then(function(response) {
+        console.log('Response from network is:', response);
+
+        return response;
+      }).catch(function(error) {
+        console.error('Fetching failed:', error);
+
+        throw error;
+      });
+    })
+  );
+}
