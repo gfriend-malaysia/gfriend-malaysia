@@ -42,13 +42,9 @@ workboxSW.precache([
 ])
 
 
-const matchCb = ({url, event}) => {
-  console.error('url',url)
-  return true
-};
+workboxSW.router.registerRoute(new RegExp('/_nuxt/.*'), workboxSW.strategies.cacheFirst({}), 'GET')
 
-// workboxSW.router.registerRoute(matchCb, workboxSW.strategies.cacheFirst({}), 'GET')
+workboxSW.router.registerRoute(new RegExp('/.*'), workboxSW.strategies.networkFirst({}), 'GET')
 
-// workboxSW.router.registerRoute(matchCb, workboxSW.strategies.networkFirst({}), 'GET')
-workboxSW.router.registerRoute(matchCb, workboxSW.strategies.staleWhileRevalidate({}), 'GET')
+workboxSW.router.registerRoute(new RegExp('https://jsonplaceholder.typicode.com/.*'), workboxSW.strategies.networkFirst({}), 'GET')
 
