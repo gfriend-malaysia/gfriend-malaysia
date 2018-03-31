@@ -1,3 +1,5 @@
+	console.error('self', self)
+
 self.addEventListener('fetch', function(event) {
 	console.error('event', event)
 	event.respondWith(
