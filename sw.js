@@ -1,4 +1,4 @@
-importScripts('/_nuxt/workbox.3de3418b.js', 'custom-sw.js')
+importScripts('/_nuxt/workbox.3de3418b.js')
 
 const workboxSW = new self.WorkboxSW({
   "cacheId": "gfriend-pwa",
