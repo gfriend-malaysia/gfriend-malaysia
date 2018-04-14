@@ -1,0 +1,55 @@
+{
+  "name": "gfriend",
+  "version": "1.0.0",
+  "description": "GFriend Malaysia",
+  "author": "hanjeahwan <hanjeahwan@gmail.com>",
+  "private": true,
+  "dependencies": {
+    "@nuxtjs/pwa": "latest",
+    "ajv": "^5.2.3",
+    "ajv-keywords": "^2.1.0",
+    "axios": "^0.16.2",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.0.0-beta",
+    "element-ui": "next",
+    "eventsource-polyfill": "^0.9.6",
+    "firebase": "^4.6.0",
+    "iview": "^2.5.1",
+    "jquery": "^3.2.1",
+    "nuxt": "^1.0.0-rc8",
+    "popper.js": "^1.12.5",
+    "postcss": "^6.0.13",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^11.0.0",
+    "postcss-loader": "^2.0.8",
+    "promise-polyfill": "^6.0.2",
+    "tether": "^1.4.0"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "build-prod": "set NODE_ENV=production&& nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "cross-env": "^5.1.4",
+    "eslint": "^4.9.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.2.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3333"
+    }
+  }
+}
